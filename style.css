@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+
+  --weight-400: 400;
+  --weight-600: 600;
+  --weight-700: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.recipe-container ul,
+.recipe-container ol {
+  line-height: 1.5em;
+  margin: 1em;
+}
+
+.recipe-container li {
+  padding-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+.recipe-container li::marker {
+  font-weight: var(--weight-700);
+  color: var(--rose-800);
+}
+
+body {
+  padding: 1rem;
+  display: grid;
+  place-content: center;
+  background-color: var(--stone-100);
+}
+
+.recipe-container p {
+  font-size: 16px;
+}
+
+.recipe-container span {
+  font-weight: bold;
+}
+
+.recipe-container h1,
+.recipe-container h2 {
+  font-family: "Young Serif";
+  /* border: 1px solid red; */
+}
+
+.recipe-container h2 {
+  color: var(--brown-800);
+  padding-top: 1em;
+}
+
+.recipe-page {
+  border-radius: 1rem;
+  max-width: 700px;
+  background-color: var(--white);
+}
+
+.recipe-page img {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.recipe-container {
+  font-family: "Outfit";
+  margin: 1.5rem;
+}
+
+.title {
+  margin: 0.5em 0 0.5em 0;
+}
+
+.description {
+  margin-bottom: 1.5em;
+}
+
+.prep-time {
+  background-color: var(--rose-50);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.prep-time h3 {
+  color: var(--rose-800);
+}
+
+.nutrition p {
+  margin-top: 1em;
+}
+
+.nutrition table {
+  margin-top: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition tr {
+  text-align: left;
+  border-bottom: 1px solid black;
+  padding: 1em;
+}
+
+.nutrition table tr:last-child {
+  border-bottom: 0;
+}
+
+.nutrition th,
+.nutrition td {
+  padding: 1em;
+}
+
+.nutrition th {
+  font-weight: var(--weight-400);
+}
+
+.nutrition td {
+  font-weight: var(--weight-700);
+  color: var(--brown-800);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 0;
+  }
+
+  .recipe-page {
+    border-radius: 0;
+  }
+
+  .recipe-page img {
+    padding: 0;
+    border-radius: 0;
+  }
+}
